@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+:root {
+  --background: url("./imgs/bg-desktop.jpg") no-repeat top center/cover;
+  --background-collor: #717171 10%;
+  --background-collor-hover: white;
+  --text-color: aliceblue;
+  --text-color-hover: blue;
+
+  --secondary-color: #3f1ce7 10%;
+  --secondary-color-hover: white;
+  --icons-background: rgba(255, 255, 255, 0.4);
+  --icons-color: white;
+  --github-color: black;
+  --github-colorhover: white;
+}
+
+#light {
+  --background: url("./imgs/bg-desktop-light.jpg") no-repeat top center/cover;
+  --background-collor: #f0f0f0 10%;
+  --background-collor-hover: white;
+  --text-color: black;
+  --text-color-hover: white;
+
+  --secondary-color: #13e6b6 10%;
+  --secondary-color-hover: white;
+  --icons-background: #d3d3d3 50%;
+  --icons-color: black;
+  --github-color: black;
+  --github-colorhover: rgb(56, 2, 117);
+}
+body {
+  background: var(--background);
+}
+body * {
+  font-family: "Roboto", sans-serif;
+  color: aliceblue;
+}
+#container {
+  width: 588px;
+
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  background: var(--background-collor);
+  border-radius: 20px;
+}
+
+#profile {
+  padding: 20px;
+}
+#profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+#profile img:hover {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  transition: all 0.3s;
+}
+
+#profile h1 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  margin: 10px 0;
+  color: var(--text-color);
+}
+#profile h1:hover {
+  color: var(--text-color-hover);
+  font-size: 45px;
+  transition: all 0.3s;
+}
+.link {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 12px 0;
+  transition: background 0.3s;
+  border-radius: 15px;
+}
+.link {
+  color: var(--text-color);
+}
+
+ul {
+  list-style: none;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link:hover {
+  background: var(--secondary-color-hover);
+  color: blue;
+  transition: background 0.3s;
+}
+
+.link:hover * {
+  color: var(--text-color-hoverr);
+}
+
+#icons {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 40px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  color: var(--icons-color);
+  padding: 10px;
+  transition: all 0.3s;
+}
+.icon #github {
+  color: var(--github-color);
+}
+#facebook:hover {
+  background: var(--icons-background);
+  color: blue;
+
+  transition: all 0.3s;
+}
+
+#watsapp:hover {
+  background: var(--icons-background);
+  color: green;
+  transition: all 0.3s;
+}
+#twitter:hover {
+  background: var(--icons-background);
+  color: rgb(0, 166, 231);
+  transition: all 0.3s;
+}
+#github:hover {
+  background: var(--icons-background);
+  color: var(--github-colorhover);
+  transition: all 0.3s;
+}
+#instagram:hover {
+  background: var(--icons-background);
+  color: rgb(225, 48, 108);
+  transition: all 0.3s;
+}
+
+footer {
+  text-align: center;
+  margin-top: 510px;
+  font-size: 15px;
+  color: white;
+}
+
+#theme {
+  color: black;
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
