@@ -6,6 +6,7 @@
 }
 :root {
   --background: url("./imgs/bg-desktop.jpg") no-repeat top center/cover;
+  --background-button: url("https://th.bing.com/th/id/OIP.G_ET1VNqWngVk1eSPyRSzwHaHa?w=202&h=202&c=7&r=0&o=7&cb=iwp1&pid=1.7&rm=3") no-repeat top center/cover;
   --background-collor: #717171 10%;
   --background-collor-hover: white;
   --text-color: aliceblue;
@@ -21,6 +22,8 @@
 
 #light {
   --background: url("./imgs/bg-desktop-light.jpg") no-repeat top center/cover;
+  --background-button: url(https://th.bing.com/th/id/OIP.fnv1NS7mRjI4hyO7sNo2iAHaHa?w=164&h=180&c=7&r=0&o=7&cb=iwp1&pid=1.7&rm=3) no-repeat top
+    center/cover;
   --background-collor: #f0f0f0 10%;
   --background-collor-hover: white;
   --text-color: black;
@@ -67,6 +70,23 @@ body * {
   display: block;
   margin: auto;
   transition: all 0.3s;
+}
+
+#profile button {
+  display: flex;
+  background: var(--background-button);
+  color: var(--text-color);
+  border: none;
+  padding: 25px 25px ;
+
+  border-radius: 100%;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 0;
+  margin-right: 0;
+  transition: background 0.3s, erase 0.9s;
 }
 
 #profile h1 {
@@ -173,12 +193,4 @@ footer {
   margin-top: 510px;
   font-size: 15px;
   color: white;
-}
-
-#theme {
-  color: black;
-
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
 }

@@ -6,3 +6,11 @@ function Toglle() {
     html.id = 'light';
   }
 }
+function Change() {
+  const html = document.getElementById("theme");
+
+  if (html.style.backgroundImage === "url('./imgs/bg-mobile.jpg')") {
+    alert("baguio");
+  }
+  
+}
